@@ -20,7 +20,7 @@ body{
 }
 .left-content{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 0.5fr));
+    grid-template-columns: repeat(260px, 0.5fr);
     grid-gap:2rem;
 }
 .card{
@@ -44,6 +44,7 @@ body{
 }
 .right-content img{
     margin: 2rem;
+    height: 150px;
 }
 .right-content h1{
     text-transform: uppercase;
