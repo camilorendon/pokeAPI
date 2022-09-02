@@ -6,7 +6,7 @@
     font-family: 'Roboto', sans-serif;
 }
 body{
-    background-color: #FCEEC8;
+    background-color: #f3fbd4;
 }
 .container{
     width: 90%;
@@ -20,14 +20,14 @@ body{
 }
 .left-content{
     display: grid;
-    grid-template-columns: repeat(260px, 0.5fr);
+    grid-template-columns: repeat(auto-fit, minmax(260px, 0.5fr));
     grid-gap:2rem;
 }
 .card{
     width: 300px;
-    background-color: #9EDEF9;
+    background-color: #72d0f8;
     border-radius: 1rem;
-    box-shadow: 0.5px;
+    box-shadow: 0.5px 5px rgba(0,0,0,0.5);
     padding: 0 1.5rem;
     display:flex;
     align-items: center;
@@ -43,7 +43,7 @@ body{
     right: 70px;
 }
 .right-content img{
-    margin: 2rem;
+    margin: 1.5rem;
     height: 150px;
 }
 .right-content h1{
@@ -55,7 +55,7 @@ body{
     width: 20%;
     margin: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     margin-top: 1rem;
 }
@@ -85,3 +85,4 @@ body{
     background-color: #b74555 ;
     border-radius: 8px;
 }
+

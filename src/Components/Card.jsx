@@ -1,15 +1,14 @@
 import React from "react";
 const Card =({pokemon, loading, infoPokemon})=>{
-    console.log(pokemon)
+    /* console.log(pokemon) */
     return(
         <>
-
             {
-                loading ? <h1>Loading...</h1> : 
+                loading ? <h1>Loading...</h1> :
                 pokemon.map((item)=>{
                     return(
                         <>
-                            <div className="card" key={item.id} onClick={()=>infoPokemon(item)}>
+                            <div className="card" key={item} onClick={()=>infoPokemon(item)}>
                                 <h2>{item.id}</h2>
                                 <img src={item.sprites.front_default} alt=""/>
                                 <h2>{item.name}</h2>
@@ -18,7 +17,6 @@ const Card =({pokemon, loading, infoPokemon})=>{
                     )
                 })
             }
-            
         </>
     )
 }
